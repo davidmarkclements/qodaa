@@ -45,9 +45,13 @@ Module.prototype._compile = function (content, filename) {
   }, (node) => {
     const { type, async } = node
     if (type === 'AwaitExpression') {
-      node.update(
-        '(' + node.source().replace('await', 'yield') + ')'
-      )
+      if (node.parent.type === 'ExpressionStatement') {
+        node.update(node.source().replace('await', 'yield'))     
+      } else { 
+        node.update(
+          '(' + node.source().replace('await', 'yield') + ')'
+        )
+      }
     }
     if (async === true) {
       const src = type === 'ArrowFunctionExpression'
