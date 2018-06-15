@@ -1,6 +1,6 @@
 {
   "name": "qodaa",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Quick and Dirty Async/Await for Node 6",
   "main": "index.js",
   "author": "David Mark Clements <huperekchuno@googlemail.com>",
