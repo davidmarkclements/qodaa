@@ -1,0 +1,29 @@
+{
+  "name": "qodaa",
+  "version": "1.0.0",
+  "description": "Quick and Dirty Async/Await for Node 6",
+  "main": "index.js",
+  "author": "David Mark Clements <huperekchuno@googlemail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "node test"
+  },
+  "dependencies": {
+    "falafel": "^2.1.0"
+  },
+  "devDependencies": {
+    "tap": "^12.0.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidmarkclements/qooda.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davidmarkclements/qooda/issues"
+  },
+  "homepage": "https://github.com/davidmarkclements/qooda#readme"
+}
